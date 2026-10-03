@@ -1,0 +1,2 @@
+NAME               IMAGE                COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+thebirthdates-db   postgres:16-alpine   "docker-entrypoint.s…"   postgres   22 minutes ago   Up 22 minutes (healthy)   0.0.0.0:5544->5432/tcp, [::]:5544->5432/tcp
