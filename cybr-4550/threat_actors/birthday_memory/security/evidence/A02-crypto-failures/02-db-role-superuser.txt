@@ -1,0 +1,9 @@
+# Captured: 2026-10-05T09:49:50.213825
+# Command: psql -h localhost -p 5544 -U birthday -d thebirthdates -c \du
+
+--- STDOUT ---
+                             List of roles
+ Role name |                         Attributes                         
+-----------+------------------------------------------------------------
+ birthday  | Superuser, Create role, Create DB, Replication, Bypass RLS
+

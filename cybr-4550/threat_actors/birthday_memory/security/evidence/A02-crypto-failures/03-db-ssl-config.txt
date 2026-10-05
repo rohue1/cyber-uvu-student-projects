@@ -1,0 +1,32 @@
+# Captured: 2026-10-05T09:49:50.214484
+# Source: server/src/db.js
+# Lines: 1-27
+
+--- STDOUT ---
+   1 | import pg from 'pg';
+   2 | 
+   3 | // `birthdate` is a DATE column. node-postgres parses DATE into a JS Date in the
+   4 | // server's local timezone, which can shift the day by one. Keep it as a string.
+   5 | pg.types.setTypeParser(1082, (value) => value);
+   6 | 
+   7 | const {
+   8 |   DATABASE_URL,
+   9 |   PGHOST = 'localhost',
+  10 |   PGPORT = '5544',
+  11 |   PGUSER = 'birthday',
+  12 |   PGPASSWORD = 'birthday',
+  13 |   PGDATABASE = 'thebirthdates',
+  14 |   PGSSL,
+  15 | } = process.env;
+  16 | 
+  17 | const ssl = PGSSL === 'true' ? { rejectUnauthorized: false } : undefined;
+  18 | 
+  19 | export const pool = DATABASE_URL
+  20 |   ? new pg.Pool({ connectionString: DATABASE_URL, ssl })
+  21 |   : new pg.Pool({
+  22 |       host: PGHOST,
+  23 |       port: Number(PGPORT),
+  24 |       user: PGUSER,
+  25 |       password: PGPASSWORD,
+  26 |       database: PGDATABASE,
+  27 |       ssl,

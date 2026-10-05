@@ -1,0 +1,27 @@
+# Captured: 2026-10-05T09:50:12.395220
+# Source: server/src/routes.js
+# Lines: 14-35
+
+--- STDOUT ---
+  14 | /** Wraps an async handler so rejected promises reach the error middleware. */
+  15 | const wrap = (handler) => (req, res, next) =>
+  16 |   Promise.resolve(handler(req, res, next)).catch(next);
+  17 | 
+  18 | /** GET /api/birthdays?q=&month= — list, optionally filtered. */
+  19 | router.get(
+  20 |   '/',
+  21 |   wrap(async (req, res) => {
+  22 |     const q = String(req.query.q ?? '').trim();
+  23 |     const month = Number(req.query.month);
+  24 | 
+  25 |     const conditions = [];
+  26 |     const params = [];
+  27 | 
+  28 |     if (q) {
+  29 |       params.push(`%${q}%`);
+  30 |       const p = `$${params.length}`;
+  31 |       conditions.push(`(
+  32 |         first_name ILIKE ${p}
+  33 |         OR last_name ILIKE ${p}
+  34 |         OR (first_name || ' ' || last_name) ILIKE ${p}
+  35 |         OR coalesce(email, '') ILIKE ${p}

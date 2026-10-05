@@ -1,0 +1,11 @@
+# Captured: 2026-10-05T09:49:50.046247
+# Command: curl -i -s -X DELETE http://localhost:4000/api/birthdays/4184d010-4490-4ca6-b1c4-3c341431a661
+
+--- STDOUT ---
+HTTP/1.1 204 No Content
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Date: Mon, 05 Oct 2026 15:49:50 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

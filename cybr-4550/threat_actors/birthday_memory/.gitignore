@@ -5,11 +5,16 @@ node_modules/
 dist/
 build/
 .vite/
+get-docker.sh
 
 # Environment
 .env
 .env.local
 .env.*.local
+.sec
+.sec.secrets.txt
+SECURITY-REVIEW.md
+solution.html
 
 # Logs
 *.log
@@ -19,3 +24,5 @@ yarn-error.log*
 
 # OS files
 .DS_Store
+
+

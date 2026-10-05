@@ -1,0 +1,15 @@
+# Captured: 2026-10-05T09:50:12.393183
+# Command: curl -i -s -G http://localhost:4000/api/birthdays --data-urlencode month=10
+
+--- STDOUT ---
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 1250
+ETag: W/"4e2-db2q1ZMZsW3sdnsE0Atk9IfiQa0"
+Date: Mon, 05 Oct 2026 15:50:12 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[{"id":"b669d32b-5d7f-4454-a9a0-9a43afb27700","firstName":"Ada","lastName":"Lovelace","birthdate":"1990-10-03","phone":"+1 415 555 0101","email":"ada@example.com","createdAt":"2026-10-03T20:12:07.790Z","updatedAt":"2026-10-03T20:12:07.790Z","age":36,"turningAge":37,"daysUntil":363,"nextBirthday":"2027-10-03"},{"id":"7414ce58-7fbd-4c4a-bc93-2cb38889cb44","firstName":"Grace","lastName":"Hopper","birthdate":"1986-10-06","phone":"+1 415 555 0102","email":"grace@example.com","createdAt":"2026-10-03T20:12:07.791Z","updatedAt":"2026-10-03T20:12:07.791Z","age":39,"turningAge":40,"daysUntil":1,"nextBirthday":"2026-10-06"},{"id":"0b9e08c0-3b3f-4049-ac1e-2040739f0740","firstName":"Alan","lastName":"Turing","birthdate":"1978-10-15","phone":"+1 415 555 0103","email":"alan@example.com","createdAt":"2026-10-03T20:12:07.792Z","updatedAt":"2026-10-03T20:12:07.792Z","age":47,"turningAge":48,"daysUntil":10,"nextBirthday":"2026-10-15"},{"id":"11cfba35-b157-4e58-a3eb-499895fa567c","firstName":"Katherine","lastName":"Johnson","birthdate":"1995-10-29","phone":"+1 415 555 0104","email":"katherine@example.com","createdAt":"2026-10-03T20:12:07.793Z","updatedAt":"2026-10-03T20:12:07.793Z","age":30,"turningAge":31,"daysUntil":24,"nextBirthday":"2026-10-29"}]

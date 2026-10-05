@@ -1,0 +1,15 @@
+# Captured: 2026-10-05T09:50:12.420803
+# Command: curl -i -s http://localhost:4000/api/birthdays
+
+--- STDOUT ---
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 2506
+ETag: W/"9ca-NrkeL9nKT7M9hcTueReLeMifqbY"
+Date: Mon, 05 Oct 2026 15:50:12 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[{"id":"99b2c8fb-e8ee-429b-a722-e179ca1eda39","firstName":"Margaret","lastName":"Hamilton","birthdate":"1984-02-29","phone":"+1 415 555 0106","email":"margaret@example.com","createdAt":"2026-10-03T20:12:07.794Z","updatedAt":"2026-10-03T20:12:07.794Z","age":42,"turningAge":43,"daysUntil":146,"nextBirthday":"2027-02-28"},{"id":"f29291d6-ee2e-4506-9cb3-9fcba7dee46c","firstName":"Tim","lastName":"Berners-Lee","birthdate":"1999-06-08","phone":"+1 415 555 0108","email":"tim@example.com","createdAt":"2026-10-03T20:12:07.796Z","updatedAt":"2026-10-03T20:12:07.796Z","age":27,"turningAge":28,"daysUntil":246,"nextBirthday":"2027-06-08"},{"id":"dc275d08-70bb-497a-8f8f-656ee8d4e855","firstName":"Linus","lastName":"Torvalds","birthdate":"1991-08-17","phone":"+1 415 555 0105","email":"linus@example.com","createdAt":"2026-10-03T20:12:07.794Z","updatedAt":"2026-10-03T20:12:07.794Z","age":35,"turningAge":36,"daysUntil":316,"nextBirthday":"2027-08-17"},{"id":"b669d32b-5d7f-4454-a9a0-9a43afb27700","firstName":"Ada","lastName":"Lovelace","birthdate":"1990-10-03","phone":"+1 415 555 0101","email":"ada@example.com","createdAt":"2026-10-03T20:12:07.790Z","updatedAt":"2026-10-03T20:12:07.790Z","age":36,"turningAge":37,"daysUntil":363,"nextBirthday":"2027-10-03"},{"id":"7414ce58-7fbd-4c4a-bc93-2cb38889cb44","firstName":"Grace","lastName":"Hopper","birthdate":"1986-10-06","phone":"+1 415 555 0102","email":"grace@example.com","createdAt":"2026-10-03T20:12:07.791Z","updatedAt":"2026-10-03T20:12:07.791Z","age":39,"turningAge":40,"daysUntil":1,"nextBirthday":"2026-10-06"},{"id":"0b9e08c0-3b3f-4049-ac1e-2040739f0740","firstName":"Alan","lastName":"Turing","birthdate":"1978-10-15","phone":"+1 415 555 0103","email":"alan@example.com","createdAt":"2026-10-03T20:12:07.792Z","updatedAt":"2026-10-03T20:12:07.792Z","age":47,"turningAge":48,"daysUntil":10,"nextBirthday":"2026-10-15"},{"id":"11cfba35-b157-4e58-a3eb-499895fa567c","firstName":"Katherine","lastName":"Johnson","birthdate":"1995-10-29","phone":"+1 415 555 0104","email":"katherine@example.com","createdAt":"2026-10-03T20:12:07.793Z","updatedAt":"2026-10-03T20:12:07.793Z","age":30,"turningAge":31,"daysUntil":24,"nextBirthday":"2026-10-29"},{"id":"4f42276d-de34-4147-9f2c-44040ee9ce43","firstName":"Hedy","lastName":"Lamarr","birthdate":"1974-11-09","phone":"+1 415 555 0107","email":"hedy@example.com","createdAt":"2026-10-03T20:12:07.795Z","updatedAt":"2026-10-03T20:12:07.795Z","age":51,"turningAge":52,"daysUntil":35,"nextBirthday":"2026-11-09"}]

@@ -1,0 +1,7 @@
+# Captured: 2026-10-05T09:49:50.226310
+# Source: server/src/index.js
+# Lines: 9-10
+
+--- STDOUT ---
+   9 | 
+  10 | app.use(cors());

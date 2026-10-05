@@ -1,0 +1,36 @@
+# Captured: 2026-10-05T09:50:11.852037
+# Source: server/src/index.js
+# Lines: 1-31
+
+--- STDOUT ---
+   1 | import 'dotenv/config';
+   2 | import express from 'express';
+   3 | import cors from 'cors';
+   4 | import { initSchema, pool } from './db.js';
+   5 | import birthdaysRouter from './routes.js';
+   6 | 
+   7 | const app = express();
+   8 | const PORT = Number(process.env.PORT ?? 4000);
+   9 | 
+  10 | app.use(cors());
+  11 | app.use(express.json());
+  12 | 
+  13 | app.get('/api/health', async (_req, res) => {
+  14 |   try {
+  15 |     await pool.query('SELECT 1');
+  16 |     res.json({ status: 'ok', database: 'thebirthdates' });
+  17 |   } catch (error) {
+  18 |     res.status(503).json({ status: 'degraded', error: error.message });
+  19 |   }
+  20 | });
+  21 | 
+  22 | app.use('/api/birthdays', birthdaysRouter);
+  23 | 
+  24 | app.use((_req, res) => {
+  25 |   res.status(404).json({ error: 'Not found.' });
+  26 | });
+  27 | 
+  28 | // eslint-disable-next-line no-unused-vars -- Express identifies error middleware by arity.
+  29 | app.use((error, _req, res, _next) => {
+  30 |   console.error('[api]', error);
+  31 |   res.status(500).json({ error: 'Something went wrong on the server.' });

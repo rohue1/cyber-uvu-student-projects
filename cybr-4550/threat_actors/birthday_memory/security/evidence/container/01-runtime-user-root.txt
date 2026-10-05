@@ -1,0 +1,5 @@
+# Captured: 2026-10-05T09:50:12.037907
+# Command: docker exec thebirthdates-db whoami
+
+--- STDOUT ---
+root

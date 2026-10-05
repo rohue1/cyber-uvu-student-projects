@@ -1,0 +1,15 @@
+# Captured: 2026-10-05T09:49:50.058718
+# Command: curl -i -s http://localhost:4000/api/birthdays/4184d010-4490-4ca6-b1c4-3c341431a661
+
+--- STDOUT ---
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 22
+ETag: W/"16-LGRtdrPlUULfESdbhaic1Iw99do"
+Date: Mon, 05 Oct 2026 15:49:50 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"error":"Not found."}

@@ -1,0 +1,11 @@
+# Captured: 2026-10-05T09:49:50.152725
+# Command: psql -h localhost -p 5544 -U birthday -d thebirthdates -c SELECT first_name, last_name, email, phone FROM birthdays LIMIT 3;
+
+--- STDOUT ---
+ first_name | last_name |       email       |      phone      
+------------+-----------+-------------------+-----------------
+ Ada        | Lovelace  | ada@example.com   | +1 415 555 0101
+ Grace      | Hopper    | grace@example.com | +1 415 555 0102
+ Alan       | Turing    | alan@example.com  | +1 415 555 0103
+(3 rows)
+

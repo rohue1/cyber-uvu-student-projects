@@ -1,0 +1,5 @@
+# Captured: 2026-10-05T09:50:12.525310
+# Command: docker inspect thebirthdates-db --format Memory={{.HostConfig.Memory}} NanoCPUs={{.HostConfig.NanoCpus}} PidsLimit={{.HostConfig.PidsLimit}}
+
+--- STDOUT ---
+Memory=0 NanoCPUs=0 PidsLimit=<no value>

@@ -1,0 +1,4 @@
+# Captured: 2026-10-05T09:50:12.528104
+# Command: grep -riE fetch|axios|http.get|request\(|got\( server/src
+
+--- STDOUT ---

@@ -1,0 +1,15 @@
+# Captured: 2026-10-05T09:49:50.008778
+# Command: curl -i -s -X POST -H Content-Type: application/json -d {"firstName":"PENTEST","lastName":"DELETE-ME","birthdate":"2001-01-01"} http://localhost:4000/api/birthdays
+
+--- STDOUT ---
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 287
+ETag: W/"11f-wWtLAA9G7sdQkA4VsY0Yd6LxTr0"
+Date: Mon, 05 Oct 2026 15:49:50 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"id":"4184d010-4490-4ca6-b1c4-3c341431a661","firstName":"PENTEST","lastName":"DELETE-ME","birthdate":"2001-01-01","phone":null,"email":null,"createdAt":"2026-10-05T15:49:49.998Z","updatedAt":"2026-10-05T15:49:49.998Z","age":25,"turningAge":26,"daysUntil":88,"nextBirthday":"2027-01-01"}

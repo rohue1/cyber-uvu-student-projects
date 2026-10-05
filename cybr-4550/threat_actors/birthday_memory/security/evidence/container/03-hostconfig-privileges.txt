@@ -1,0 +1,5 @@
+# Captured: 2026-10-05T09:50:12.298789
+# Command: docker inspect thebirthdates-db --format User={{.Config.User}} CapAdd={{.HostConfig.CapAdd}} CapDrop={{.HostConfig.CapDrop}} Privileged={{.HostConfig.Privileged}} Memory={{.HostConfig.Memory}} NanoCPUs={{.HostConfig.NanoCpus}}
+
+--- STDOUT ---
+User= CapAdd=<no value> CapDrop=<no value> Privileged=false Memory=0 NanoCPUs=0
